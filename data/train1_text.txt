@@ -1,0 +1,41 @@
+!!CENTER 40
+train_title;Open Source Edition
+menu_item_1;START GAME
+menu_item_spd_1;Game Speed: NORMAL
+menu_item_spd_2;Game Speed: SLOWER
+!!CENTER 20
+scene_sel;SCENE  SELECTION
+!!CENTER OFF
+scene_row1;   01 02 03 04 05
+scene_row2;   06 07 08 09 10
+scene_row3;   11 12 13 14 15
+scene_row4;   16 17 18 19 20
+scene_row5;   21 22 23 24 25
+scene_row6;   26 27 28 29 30 
+scene_row7;   31 32 33 34 35
+scene_row8;   36 37 38 39 40
+scene_row9;   41 42 43 44 45
+scene_row10;   46 47 48 49 50 
+!!CENTER 40
+scene_begin;Select scene and press ~FIRE~ to begin
+!!CENTER OFF
+score_bar;SCORE:000000      SCENE:00       LIVES:3
+topscore_bar;LAST SCORE:000000      HIGH SCORE:000000
+!!CENTER 26
+level_complete;Scene complete ! 
+train_crashed0;TRAIN CRASHED
+train_crashed1;CRASH! BOOM! BANG!
+train_crashed2;FATAL BOILER EXPLOSION
+train_crashed3;TRAIN DERAILED
+train_poisoned;~ POISONED CARGO ~
+!!CENTER 20
+game_over;GAME  OVER
+!!CENTER 40
+press_fire;Press ~FIRE~ to continue
+!!CENTER 20
+congrat_1;CONGRATULATIONS !
+congrat_2;YOU HAVE BEEN
+congrat_3;PROMOTED TO
+congrat_4;station keeper
+new_hiscore;NEW HIGH SCORE
+well_done;COMMENDATION
