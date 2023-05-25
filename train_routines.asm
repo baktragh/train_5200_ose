@@ -476,7 +476,7 @@ _vbiUniversalRoutine:
 
 .proc _rmtSetUniversalVBI: near
 .segment "CODE"
-      lda #124
+      lda #$7A
  @l:  cmp VCOUNT
       bne @l
       ;store original vbi address

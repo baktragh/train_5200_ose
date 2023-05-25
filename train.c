@@ -200,7 +200,7 @@ void toggleGameInit(unsigned char gameInitType);
 void expandAndPaintLevel(unsigned char levelIndex);
 void transposeElement(unsigned char* ptr);
 void eraseElement(unsigned char* ptr);
-void expandMask(char* elementDataPtr, unsigned char elementCharIndex);
+void expandMask(unsigned char* elementDataPtr, unsigned char elementCharIndex);
 void paintGameStatusBar();
 
 /*Decimal displays*/
@@ -475,9 +475,9 @@ int main() {
 
     /*Initialization for a diagnostic cartridge*/
     memset(0x0000, 0, 0x1D); //Clear zero PAGE
-    memset((unsigned char*) ANTIC, 0, sizeof (ANTIC)); //Clear ANTIC
-    memset((unsigned char*) GTIA_WRITE, 0, sizeof (GTIA_WRITE)); //Clear GTIA
-    memset((unsigned char*) POKEY_WRITE, 0, sizeof (POKEY_WRITE)); //Clear POKEY
+    memset((void*) &ANTIC, 0, sizeof (ANTIC)); //Clear ANTIC
+    memset((void*) &GTIA_WRITE, 0, sizeof (GTIA_WRITE)); //Clear GTIA
+    memset((void*) &POKEY_WRITE, 0, sizeof (POKEY_WRITE)); //Clear POKEY
 
     /*Set interrupt handler vectors by them copying from ROM*/
     memcpy((unsigned char*) 0x0200U, (unsigned char*) 0xFE95U, 12);
@@ -1688,7 +1688,7 @@ unsigned char screenSceneSelection() {
     /*Draw title line*/
     ptr1 = &TRAIN_DATA_GAMESCREEN;
     memcpy(ptr1 + T_SCENE_SEL_C, T_SCENE_SEL, T_SCENE_SEL_L);
-    ptr1 + 20;
+    ptr1 += 20;
 
     /*Draw separators*/
     memset(&TRAIN_DATA_GAMESCREEN + 20, CHAR_SEPARATOR, 40);
@@ -2355,16 +2355,10 @@ unsigned char jsGet(unsigned char flags) {
     }
     
     /*If not input from keypad, then get the stick*/
-    
-    /*Start scanning pots*/
-    POKEY_WRITE.potgo = 0;
-
-    /*Wait until pots 0 and 1 are scanned*/
-    while ((POKEY_READ.allpot & 0x03) != 0);
 
     /*Determine direction*/
-    jx = POKEY_READ.pot0;
-    jy = POKEY_READ.pot1;
+    jx = PEEK(0x11);
+    jy = PEEK(0x12);
 
     /*If diagonal, return nothing*/
     if ((jx < 98 || jx > 130) && (jy < 98 || jy > 130)) return JS_C;
