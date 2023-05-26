@@ -59,8 +59,8 @@ ca65 -t atari5200 -D GAME_TRAIN1=1 -o build\train1_data.o train_data.asm
 IF %ERRORLEVEL% NEQ 0 GOTO :XIT
 
 
-REM Link binary file
-ECHO [5/5] Linking binary load file...
+REM Link cartridge images
+ECHO [5/5] Linking cartridge images...
 ld65 -C linker.cfg --mapfile build\map3.txt -o train3_5200.bin build\train3.o build\train3_data.o build\train3_routines.o atari5200.lib
 IF %ERRORLEVEL% NEQ 0 GOTO :XIT
 ld65 -C linker.cfg --mapfile build\map2.txt -o train2_5200.bin build\train2.o build\train2_data.o build\train2_routines.o atari5200.lib
