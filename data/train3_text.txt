@@ -1,5 +1,5 @@
 !!CENTER 40
-train_title;Open Source Edition v1.2
+train_title;Open Source Edition v1.2proto1
 menu_item_1;START GAME
 menu_item_spd_1;Game Speed: NORMAL
 menu_item_spd_2;Game Speed: SLOWER

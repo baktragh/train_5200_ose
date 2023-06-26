@@ -193,6 +193,7 @@ void hideLoco();
 
 /*Game toggles*/
 void setGameSpeed(unsigned char speed);
+void setJoystickZones(unsigned char zoneSize);
 void toggleGameInit(unsigned char gameInitType);
 
 
@@ -412,6 +413,12 @@ unsigned char realMoveDelay;
 unsigned char lastKey;
 unsigned char lastJS;
 
+unsigned char jsZoneLeft;
+unsigned char jsZoneRight;
+unsigned char jsZoneUp;
+unsigned char jsZoneDown;
+unsigned char jsZoneSizes[3] = {12,16,22};
+
 unsigned char NTSCSpeeds[2] = {20, 24};
 
 /*Colors changed in DLI*/
@@ -562,6 +569,7 @@ menu:
 
     /*Set game speed to the speed selected in menu*/
     setGameSpeed(menuGameSpeed);
+    setJoystickZones(menuDeadZone);
 
     /*Select scene*/
     if (gameMaxLevelIndex > 0) {
@@ -2231,7 +2239,14 @@ void disableDisplay() {
 
 void setGameSpeed(unsigned char speed) {
     normalMoveDelay = NTSCSpeeds[speed];
+}
 
+void setJoystickZones(unsigned char zoneSize) {
+    unsigned char z = jsZoneSizes[zoneSize];
+    jsZoneDown = 114+z;
+    jsZoneUp = 114-z;
+    jsZoneLeft = 114-z;
+    jsZoneRight = 114+z;
 }
 
 void toggleGameInit(unsigned char gameInitType) {
@@ -2356,6 +2371,7 @@ void ctrlSwapAll() {
 /* Initialize joystick */
 void jsInit() {
     GTIA_WRITE.consol = 0x04;
+    setJoystickZones(MENU_DZ_MEDIUM);
 }
 
 /*Get trigger. 0 Pressed, 1 not pressed*/
@@ -2396,13 +2412,13 @@ unsigned char jsGet(unsigned char flags) {
     jy = PEEK(0x12);
 
     /*If diagonal, return nothing*/
-    if ((jx < 98 || jx > 130) && (jy < 98 || jy > 130)) return JS_C;
+    if ((jx < jsZoneLeft || jx > jsZoneRight) && (jy < jsZoneUp || jy > jsZoneDown)) return JS_C;
 
     /*Return digital direction*/
-    if (jx < 98) return JS_LEFT;
-    if (jx > 130) return JS_RIGHT;
-    if (jy < 98) return JS_UP;
-    if (jy > 130) return JS_DOWN;
+    if (jx < jsZoneLeft) return JS_LEFT;
+    if (jx > jsZoneRight) return JS_RIGHT;
+    if (jy < jsZoneUp) return JS_UP;
+    if (jy > jsZoneDown) return JS_DOWN;
 
     /*Otherwise return no direction*/
     return JS_C;
