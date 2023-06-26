@@ -454,12 +454,18 @@ unsigned char* highScorePtr;
 /*Menu*/
 #define MENU_ITEM_START_GAME (0)
 #define MENU_ITEM_SPEED (1)
+#define MENU_ITEM_DEAD_ZONE (2)
 #define MENU_ITEM_MAX (2)
 
 #define GAME_AUDIO_SFX (0)
 
+#define MENU_DZ_SMALL (0)
+#define MENU_DZ_MEDIUM (1)
+#define MENU_DZ_LARGE (2)
+
 unsigned char menuCurrentItem;
 unsigned char menuGameSpeed;
+unsigned char menuDeadZone;
 unsigned char menuCycleTrainFlag;
 unsigned char menuScrollTextFlag;
 
@@ -512,6 +518,7 @@ int main() {
     gameInitType = GAME_INIT_NORMAL;
     setGameSpeed(GAME_SPEED_NORMAL);
     menuGameSpeed = GAME_SPEED_NORMAL;
+    menuDeadZone = MENU_DZ_MEDIUM;
 
     toggleGameInit(gameInitType);
 
@@ -1299,7 +1306,14 @@ void handleMenu() {
             while (jsGetFire() == 0);
             if (menuCurrentItem == MENU_ITEM_SPEED) {
                 menuGameSpeed = !menuGameSpeed;
-
+            }
+            else if (menuCurrentItem == MENU_ITEM_DEAD_ZONE) {
+                if (menuDeadZone==MENU_DZ_LARGE) {
+                    menuDeadZone=MENU_DZ_SMALL;
+                    }
+                else {
+                    ++menuDeadZone;
+                }
             }
             paintMenuItems();
             delay(10);
@@ -1308,7 +1322,7 @@ void handleMenu() {
         /*Allow menu item selection*/
         lastJS=jsGet(JS_FLAG_START);
 
-        if (lastJS == JS_DOWN && menuCurrentItem < MENU_ITEM_SPEED) {
+        if (lastJS == JS_DOWN && menuCurrentItem < MENU_ITEM_MAX) {
             menuCurrentItem++;
             paintMenuItems();
             OS.atract = 0;
@@ -1372,7 +1386,7 @@ void paintTrainTitle() {
     memset(&TRAIN_DATA_GAMESCREEN + (11 * 40), CHAR_SEPARATOR, 40);
 
     /*Track*/
-    memset(&TRAIN_DATA_GAMESCREEN + (15 * 40), CHAR_TRACK, 40);
+    memset(&TRAIN_DATA_GAMESCREEN + (16 * 40), CHAR_TRACK, 40);
 
 }
 
@@ -1397,6 +1411,22 @@ void paintMenuItems() {
         memcpy(&TRAIN_DATA_GAMESCREEN + (13 * 40) + T_MENU_ITEM_SPD_2_C, T_MENU_ITEM_SPD_2, T_MENU_ITEM_SPD_2_L);
     }
 
+    /*Paint "Dead zone"*/
+    switch (menuDeadZone) {
+        case MENU_DZ_SMALL: {
+            memcpy(&TRAIN_DATA_GAMESCREEN + (14*40)+T_MENU_ITEM_DZ_0_C,T_MENU_ITEM_DZ_0,T_MENU_ITEM_DZ_0_L);
+            break;
+        }
+        case MENU_DZ_MEDIUM: {
+            memcpy(&TRAIN_DATA_GAMESCREEN + (14*40)+T_MENU_ITEM_DZ_1_C,T_MENU_ITEM_DZ_1,T_MENU_ITEM_DZ_1_L);
+            break;
+        }
+        case MENU_DZ_LARGE: {
+            memcpy(&TRAIN_DATA_GAMESCREEN + (14*40)+T_MENU_ITEM_DZ_2_C,T_MENU_ITEM_DZ_2,T_MENU_ITEM_DZ_2_L);
+            break;
+        }
+    }
+
     /*Inverse the current menu item*/
     switch (menuCurrentItem) {
         case(MENU_ITEM_START_GAME):
@@ -1409,6 +1439,11 @@ void paintMenuItems() {
         {
             ptr = &TRAIN_DATA_GAMESCREEN + (13 * 40) + T_MENU_ITEM_SPD_1_C - 1;
             l = T_MENU_ITEM_SPD_1_L + 2;
+            break;
+        }
+        case (MENU_ITEM_DEAD_ZONE): {
+            ptr = &TRAIN_DATA_GAMESCREEN + (14 * 40) + T_MENU_ITEM_DZ_1_C - 1;
+            l = T_MENU_ITEM_DZ_1_L +2 ;
             break;
         }
     }

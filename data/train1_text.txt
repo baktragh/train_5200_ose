@@ -3,6 +3,9 @@ train_title;Open Source Edition
 menu_item_1;START GAME
 menu_item_spd_1;Game Speed: NORMAL
 menu_item_spd_2;Game Speed: SLOWER
+menu_item_dz_0;JS Dead Zone: SMALL
+menu_item_dz_1;JS Dead Zone: MEDIUM
+menu_item_dz_2;JS Dead Zone: LARGE
 !!CENTER 20
 scene_sel;SCENE  SELECTION
 !!CENTER OFF

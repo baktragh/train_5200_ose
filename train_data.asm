@@ -81,15 +81,17 @@ _TRAIN_DATA_DL_MENU:
 .byte 16                      ; 2 blank lines
 .byte 2                       ; Menu line - Game Speed: xxxx                  1 
 .byte 16                      ; 2 blank lines
-.byte 2                       ; Menu line - In-Game Audio:                    1      
-.byte 112,80+128             ; More blank lines between menu items and bar
+.byte 2                       ; Menu line - In-Game Audio:                    1
+.byte 16                      ; 2 blank lines
+.byte 2                       ; Menu line - Dead zone                         1      
+.byte 16,80+128               ; More blank lines between menu items and bar
 .byte 4                       ; The track                                     1
 .byte 48
 .byte 32+128                  ; Three blank lines + DLI for status bar
 .byte 2+64                    ; One line for status bar (scores)              1
 .word _TRAIN_DATA_STATUSBARSCREEN
 .byte 65                      ; JVB
-.word _TRAIN_DATA_DL_MENU     ; DL jump                                      17
+.word _TRAIN_DATA_DL_MENU     ; DL jump                                      18
 _TRAIN_DATA_DL_MENU_END:
 
 _TRAIN_DATA_DL_GAME:
