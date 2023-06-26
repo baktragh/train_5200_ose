@@ -84,7 +84,7 @@ _TRAIN_DATA_DL_MENU:
 .byte 2                       ; Menu line - In-Game Audio:                    1
 .byte 16                      ; 2 blank lines
 .byte 2                       ; Menu line - Dead zone                         1      
-.byte 16,80+128               ; More blank lines between menu items and bar
+.byte 48+128                  ; More blank lines between menu items and bar
 .byte 4                       ; The track                                     1
 .byte 48
 .byte 32+128                  ; Three blank lines + DLI for status bar
