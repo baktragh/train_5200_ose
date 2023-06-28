@@ -417,7 +417,7 @@ unsigned char jsZoneLeft;
 unsigned char jsZoneRight;
 unsigned char jsZoneUp;
 unsigned char jsZoneDown;
-unsigned char jsZoneSizes[3] = {12,16,22};
+unsigned char jsZoneSizes[3] = {25,45,65};
 
 unsigned char NTSCSpeeds[2] = {20, 24};
 
