@@ -1,0 +1,76 @@
+TRAIN 1, 2, 3 OSE games for the
+Atari 5200 console © 2020 BAHA
+Software Petr Postava & Michael
+Kalouš
+
+Gameplay
+
+You are a cargo train driver and
+your mission is to load all cargo on
+screen. For every piece of cargo
+loaded, your train is elongated by
+one carriage. You must not collide
+with any obstacle or with your own
+train. After loading of all items, a
+gate that allows you to go to the
+next screen is opened. The goal of
+the game is to finish all screens
+and maximize your score. The
+difficulty of the screens increases.
+In the later stages of the game, it
+is recommended to plan a safe route
+before starting your locomotive.
+
+Lives and Scoring
+
+You begin the game
+with three lives. For every item
+loaded, you get 10 points. After
+finishing a screen, you will get 200
+points for every remaining life. If
+you lose a life, you lose 300
+points. A new life is awarded for
+every 5000 points. The game ends
+after losing all lives. A new game
+can be started from any screen that
+has been reached already. 
+
+Controls
+
+Use joystick or keypad to control
+the locomotive or to make a
+selection.
+
+Stick Keypad Action 
+LEFT  4      Move left
+RIGHT 6      Move right
+UP    2      Move up
+DOWN  5 or 8 Move down
+FIRE         Faster/Select
+START        Start game
+RESET        Return to menu
+
+Menu and Scene Selection
+
+In the main menu, you can start game,
+change game speed, and select the
+size of the joystick’s dead zone.
+You can begin the game from any
+screen you have already reached.
+Position the cursor on the desired
+screen number and then press FIRE.
+
+Technical Information
+
+The cartridge is designed for the
+Atari 5200 console with 16 KB of RAM,
+original Atari 5200 joystick or a
+fully compatible 3rd party
+controller. The cartridge is a 32-KB
+non-bankswitching diagnostic
+cartridge. The code was written
+using the CC65 toolkit –
+http://cc65.github.io/.
+
+Contact Author
+Send e-mail to zylon@post.cz.
