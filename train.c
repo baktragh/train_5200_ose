@@ -492,18 +492,29 @@ int main() {
     memset((void*) &GTIA_WRITE, 0, sizeof (GTIA_WRITE)); //Clear GTIA
     memset((void*) &POKEY_WRITE, 0, sizeof (POKEY_WRITE)); //Clear POKEY
 
-    /*Set interrupt handler vectors by them copying from ROM*/
-    memcpy((unsigned char*) 0x0200U, (unsigned char*) 0xFE95U, 12);
+    /*Set interrupt handler vectors - fixed locations in OS ROM. These
+      values work with all three OS ROMs that concern us:
+      - Original BIOS for 4-port model
+      - New BIOS for 2-port model
+      - Altirra's BIOS for 5200 
+      */
+    OS.vinter=(void*)0xFC03;
+    OS.vvblki=(void*)0xFCB8;
+    OS.vvblkd=(void*)0xFCB2;
+    OS.vkeybd=(void*)0xFD02;
+
+    /*Set custom interrupt handlers*/
+    OS.vbrkky=(void*)&brkIRQHandler;
+    OS.vbreak=(void*)&brkIRQHandler;
+    OS.vkeypd=(void*)&kpdHandler;
+    
 
     /*Set DMA and interrupts*/
     OS.sdmctl = 0x3E; //Normal screen + 1-line PMG
     ANTIC.nmien = 0x40; //Just VBI for now
     ANTIC.chactl = 0x02; //Standard character display
     
-    /*Break key interrupt handler*/
-    OS.vbrkky=(void*)&brkIRQHandler;
-    OS.vbreak=(void*)&brkIRQHandler;
-    OS.vkeypd=(void*)&kpdHandler;
+    
 
     POKEY_WRITE.skctl = 0x02; //Standard serial I/O
     OS.pokmsk = 0xC0; //Standard mask
