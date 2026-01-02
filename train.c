@@ -668,8 +668,21 @@ gameLoop:
     /*Determine what is the direction*/
     lastJS = jsGet(JS_FLAG_RESET);
     if (lastJS != JS_C) {
-        locoJoystickDirection = lastJS;
+
+
+        /*No ATRACT mode*/
         OS.atract=0;
+
+        /*Avoid 180 degrees turn when at least one carriage*/
+        if (levelTrainLength>0 && ((lastJS == JS_LEFT && locoJoystickDirection==JS_RIGHT) ||
+           (lastJS == JS_RIGHT && locoJoystickDirection==JS_LEFT) || 
+           (lastJS == JS_UP && locoJoystickDirection==JS_DOWN) || 
+           (lastJS == JS_DOWN && locoJoystickDirection==JS_UP))) {
+           lastJS=locoJoystickDirection;
+           }
+        else {
+            locoJoystickDirection = lastJS;
+        }
     }
 
     /*Equalized movement of the loco*/
