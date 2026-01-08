@@ -1,40 +1,40 @@
 Modules list:
 -------------
 train2.o:
-    CODE              Offs=000000  Size=002C01  Align=00001  Fill=0000
-    BSS               Offs=000000  Size=0002A6  Align=00001  Fill=0000
-    DATA              Offs=000000  Size=0002A8  Align=00001  Fill=0000
+    CODE              Offs=000000  Size=002C83  Align=00001  Fill=0000
+    BSS               Offs=000000  Size=0002A8  Align=00001  Fill=0000
+    DATA              Offs=000000  Size=0002C9  Align=00001  Fill=0000
 train2_data.o:
-    CODE              Offs=002C01  Size=0026E5  Align=00001  Fill=0000
+    CODE              Offs=002C83  Size=0026E5  Align=00001  Fill=0000
     TRAIN_SEG_CHARSET1 Offs=000000  Size=000400  Align=00001  Fill=0000
     TRAIN_SEG_CHARSET2 Offs=000000  Size=000400  Align=00001  Fill=0000
-    TRAIN_SEG_DL      Offs=000000  Size=00008E  Align=00001  Fill=0000
+    TRAIN_SEG_DL      Offs=000000  Size=000090  Align=00001  Fill=0000
     TRAIN_SEG_RMTSONG Offs=000000  Size=000B4C  Align=00001  Fill=0000
     TRAIN_SEG_RMTPLAYER Offs=000000  Size=00060A  Align=00001  Fill=0000
     DCARTYEAR         Offs=000000  Size=000002  Align=00001  Fill=0000
 train2_routines.o:
-    CODE              Offs=0052E6  Size=00026C  Align=00001  Fill=0000
-    DATA              Offs=0002A8  Size=00000A  Align=00001  Fill=0000
+    CODE              Offs=005368  Size=00026C  Align=00001  Fill=0000
+    DATA              Offs=0002C9  Size=00000A  Align=00001  Fill=0000
     ZEROPAGE          Offs=000000  Size=00000A  Align=00001  Fill=0000
 C:\UTILS\A8\CC65/lib/atari5200.lib(add.o):
-    CODE              Offs=005552  Size=00001C  Align=00001  Fill=0000
+    CODE              Offs=0055D4  Size=00001C  Align=00001  Fill=0000
 C:\UTILS\A8\CC65/lib/atari5200.lib(addeqsp.o):
-    CODE              Offs=00556E  Size=000011  Align=00001  Fill=0000
+    CODE              Offs=0055F0  Size=000011  Align=00001  Fill=0000
 C:\UTILS\A8\CC65/lib/atari5200.lib(addysp.o):
-    CODE              Offs=00557F  Size=00000E  Align=00001  Fill=0000
+    CODE              Offs=005601  Size=00000E  Align=00001  Fill=0000
 C:\UTILS\A8\CC65/lib/atari5200.lib(aslax2.o):
-    CODE              Offs=00558D  Size=00000B  Align=00001  Fill=0000
+    CODE              Offs=00560F  Size=00000B  Align=00001  Fill=0000
 C:\UTILS\A8\CC65/lib/atari5200.lib(aslax3.o):
-    CODE              Offs=005598  Size=00000E  Align=00001  Fill=0000
+    CODE              Offs=00561A  Size=00000E  Align=00001  Fill=0000
 C:\UTILS\A8\CC65/lib/atari5200.lib(aslax4.o):
-    CODE              Offs=0055A6  Size=000011  Align=00001  Fill=0000
+    CODE              Offs=005628  Size=000011  Align=00001  Fill=0000
 C:\UTILS\A8\CC65/lib/atari5200.lib(asrax3.o):
-    CODE              Offs=0055B7  Size=000014  Align=00001  Fill=0000
+    CODE              Offs=005639  Size=000014  Align=00001  Fill=0000
 C:\UTILS\A8\CC65/lib/atari5200.lib(bneg.o):
-    CODE              Offs=0055CB  Size=00000E  Align=00001  Fill=0000
+    CODE              Offs=00564D  Size=00000E  Align=00001  Fill=0000
 C:\UTILS\A8\CC65/lib/atari5200.lib(callmain.o):
-    CODE              Offs=0055D9  Size=000017  Align=00001  Fill=0000
-    DATA              Offs=0002B2  Size=000004  Align=00001  Fill=0000
+    CODE              Offs=00565B  Size=000017  Align=00001  Fill=0000
+    DATA              Offs=0002D3  Size=000004  Align=00001  Fill=0000
 C:\UTILS\A8\CC65/lib/atari5200.lib(cartentry.o):
     CARTENTRY         Offs=000000  Size=000002  Align=00001  Fill=0000
 C:\UTILS\A8\CC65/lib/atari5200.lib(cartname.o):
@@ -42,89 +42,89 @@ C:\UTILS\A8\CC65/lib/atari5200.lib(cartname.o):
 C:\UTILS\A8\CC65/lib/atari5200.lib(cartyear.o):
     CARTYEAR          Offs=000000  Size=000002  Align=00001  Fill=0000
 C:\UTILS\A8\CC65/lib/atari5200.lib(condes.o):
-    CODE              Offs=0055F0  Size=00000C  Align=00001  Fill=0000
-    DATA              Offs=0002B6  Size=000025  Align=00001  Fill=0000
+    CODE              Offs=005672  Size=00000C  Align=00001  Fill=0000
+    DATA              Offs=0002D7  Size=000025  Align=00001  Fill=0000
     ONCE              Offs=000000  Size=00000C  Align=00001  Fill=0000
 C:\UTILS\A8\CC65/lib/atari5200.lib(copydata.o):
-    CODE              Offs=0055FC  Size=00002D  Align=00001  Fill=0000
+    CODE              Offs=00567E  Size=00002D  Align=00001  Fill=0000
 C:\UTILS\A8\CC65/lib/atari5200.lib(crt0.o):
-    CODE              Offs=005629  Size=00001A  Align=00001  Fill=0000
+    CODE              Offs=0056AB  Size=00001A  Align=00001  Fill=0000
 C:\UTILS\A8\CC65/lib/atari5200.lib(decax1.o):
-    CODE              Offs=005643  Size=000007  Align=00001  Fill=0000
+    CODE              Offs=0056C5  Size=000007  Align=00001  Fill=0000
 C:\UTILS\A8\CC65/lib/atari5200.lib(decax2.o):
-    CODE              Offs=00564A  Size=000007  Align=00001  Fill=0000
+    CODE              Offs=0056CC  Size=000007  Align=00001  Fill=0000
 C:\UTILS\A8\CC65/lib/atari5200.lib(decax3.o):
-    CODE              Offs=005651  Size=000007  Align=00001  Fill=0000
+    CODE              Offs=0056D3  Size=000007  Align=00001  Fill=0000
 C:\UTILS\A8\CC65/lib/atari5200.lib(decax4.o):
-    CODE              Offs=005658  Size=000007  Align=00001  Fill=0000
+    CODE              Offs=0056DA  Size=000007  Align=00001  Fill=0000
 C:\UTILS\A8\CC65/lib/atari5200.lib(decaxy.o):
-    CODE              Offs=00565F  Size=000009  Align=00001  Fill=0000
+    CODE              Offs=0056E1  Size=000009  Align=00001  Fill=0000
 C:\UTILS\A8\CC65/lib/atari5200.lib(div.o):
-    CODE              Offs=005668  Size=000015  Align=00001  Fill=0000
+    CODE              Offs=0056EA  Size=000015  Align=00001  Fill=0000
 C:\UTILS\A8\CC65/lib/atari5200.lib(icmp.o):
-    CODE              Offs=00567D  Size=00002E  Align=00001  Fill=0000
+    CODE              Offs=0056FF  Size=00002E  Align=00001  Fill=0000
 C:\UTILS\A8\CC65/lib/atari5200.lib(incax1.o):
-    CODE              Offs=0056AB  Size=000007  Align=00001  Fill=0000
+    CODE              Offs=00572D  Size=000007  Align=00001  Fill=0000
 C:\UTILS\A8\CC65/lib/atari5200.lib(incax2.o):
-    CODE              Offs=0056B2  Size=000007  Align=00001  Fill=0000
+    CODE              Offs=005734  Size=000007  Align=00001  Fill=0000
 C:\UTILS\A8\CC65/lib/atari5200.lib(incax3.o):
-    CODE              Offs=0056B9  Size=000005  Align=00001  Fill=0000
+    CODE              Offs=00573B  Size=000005  Align=00001  Fill=0000
 C:\UTILS\A8\CC65/lib/atari5200.lib(incax8.o):
-    CODE              Offs=0056BE  Size=000005  Align=00001  Fill=0000
+    CODE              Offs=005740  Size=000005  Align=00001  Fill=0000
 C:\UTILS\A8\CC65/lib/atari5200.lib(incaxy.o):
-    CODE              Offs=0056C3  Size=00000B  Align=00001  Fill=0000
+    CODE              Offs=005745  Size=00000B  Align=00001  Fill=0000
 C:\UTILS\A8\CC65/lib/atari5200.lib(incsp1.o):
-    CODE              Offs=0056CE  Size=000007  Align=00001  Fill=0000
+    CODE              Offs=005750  Size=000007  Align=00001  Fill=0000
 C:\UTILS\A8\CC65/lib/atari5200.lib(incsp2.o):
-    CODE              Offs=0056D5  Size=000016  Align=00001  Fill=0000
+    CODE              Offs=005757  Size=000016  Align=00001  Fill=0000
 C:\UTILS\A8\CC65/lib/atari5200.lib(incsp3.o):
-    CODE              Offs=0056EB  Size=000005  Align=00001  Fill=0000
+    CODE              Offs=00576D  Size=000005  Align=00001  Fill=0000
 C:\UTILS\A8\CC65/lib/atari5200.lib(incsp4.o):
-    CODE              Offs=0056F0  Size=000005  Align=00001  Fill=0000
+    CODE              Offs=005772  Size=000005  Align=00001  Fill=0000
 C:\UTILS\A8\CC65/lib/atari5200.lib(ldaxi.o):
-    CODE              Offs=0056F5  Size=00000D  Align=00001  Fill=0000
+    CODE              Offs=005777  Size=00000D  Align=00001  Fill=0000
 C:\UTILS\A8\CC65/lib/atari5200.lib(ldaxsp.o):
-    CODE              Offs=005702  Size=000009  Align=00001  Fill=0000
+    CODE              Offs=005784  Size=000009  Align=00001  Fill=0000
 C:\UTILS\A8\CC65/lib/atari5200.lib(memcmp.o):
-    CODE              Offs=00570B  Size=000034  Align=00001  Fill=0000
+    CODE              Offs=00578D  Size=000034  Align=00001  Fill=0000
 C:\UTILS\A8\CC65/lib/atari5200.lib(memcpy.o):
-    CODE              Offs=00573F  Size=00003C  Align=00001  Fill=0000
+    CODE              Offs=0057C1  Size=00003C  Align=00001  Fill=0000
 C:\UTILS\A8\CC65/lib/atari5200.lib(memmove.o):
-    CODE              Offs=00577B  Size=000050  Align=00001  Fill=0000
+    CODE              Offs=0057FD  Size=000050  Align=00001  Fill=0000
 C:\UTILS\A8\CC65/lib/atari5200.lib(memset.o):
-    CODE              Offs=0057CB  Size=00005D  Align=00001  Fill=0000
+    CODE              Offs=00584D  Size=00005D  Align=00001  Fill=0000
 C:\UTILS\A8\CC65/lib/atari5200.lib(mod.o):
-    CODE              Offs=005828  Size=000011  Align=00001  Fill=0000
+    CODE              Offs=0058AA  Size=000011  Align=00001  Fill=0000
 C:\UTILS\A8\CC65/lib/atari5200.lib(mul8.o):
-    CODE              Offs=005839  Size=00003A  Align=00001  Fill=0000
+    CODE              Offs=0058BB  Size=00003A  Align=00001  Fill=0000
 C:\UTILS\A8\CC65/lib/atari5200.lib(mulax10.o):
-    CODE              Offs=005873  Size=000019  Align=00001  Fill=0000
+    CODE              Offs=0058F5  Size=000019  Align=00001  Fill=0000
 C:\UTILS\A8\CC65/lib/atari5200.lib(mulax3.o):
-    CODE              Offs=00588C  Size=000011  Align=00001  Fill=0000
+    CODE              Offs=00590E  Size=000011  Align=00001  Fill=0000
 C:\UTILS\A8\CC65/lib/atari5200.lib(mulax5.o):
-    CODE              Offs=00589D  Size=000014  Align=00001  Fill=0000
+    CODE              Offs=00591F  Size=000014  Align=00001  Fill=0000
 C:\UTILS\A8\CC65/lib/atari5200.lib(negabs.o):
-    CODE              Offs=0058B1  Size=000012  Align=00001  Fill=0000
+    CODE              Offs=005933  Size=000012  Align=00001  Fill=0000
 C:\UTILS\A8\CC65/lib/atari5200.lib(popptr1.o):
-    CODE              Offs=0058C3  Size=00000E  Align=00001  Fill=0000
+    CODE              Offs=005945  Size=00000E  Align=00001  Fill=0000
 C:\UTILS\A8\CC65/lib/atari5200.lib(pusha.o):
-    CODE              Offs=0058D1  Size=000016  Align=00001  Fill=0000
+    CODE              Offs=005953  Size=000016  Align=00001  Fill=0000
 C:\UTILS\A8\CC65/lib/atari5200.lib(pushax.o):
-    CODE              Offs=0058E7  Size=00001A  Align=00001  Fill=0000
+    CODE              Offs=005969  Size=00001A  Align=00001  Fill=0000
 C:\UTILS\A8\CC65/lib/atari5200.lib(pushwsp.o):
-    CODE              Offs=005901  Size=00001C  Align=00001  Fill=0000
+    CODE              Offs=005983  Size=00001C  Align=00001  Fill=0000
 C:\UTILS\A8\CC65/lib/atari5200.lib(return0.o):
-    CODE              Offs=00591D  Size=000004  Align=00001  Fill=0000
+    CODE              Offs=00599F  Size=000004  Align=00001  Fill=0000
 C:\UTILS\A8\CC65/lib/atari5200.lib(shelp.o):
-    CODE              Offs=005921  Size=000020  Align=00001  Fill=0000
+    CODE              Offs=0059A3  Size=000020  Align=00001  Fill=0000
 C:\UTILS\A8\CC65/lib/atari5200.lib(staspidx.o):
-    CODE              Offs=005941  Size=000016  Align=00001  Fill=0000
+    CODE              Offs=0059C3  Size=000016  Align=00001  Fill=0000
 C:\UTILS\A8\CC65/lib/atari5200.lib(udiv.o):
-    CODE              Offs=005957  Size=00004F  Align=00001  Fill=0000
+    CODE              Offs=0059D9  Size=00004F  Align=00001  Fill=0000
 C:\UTILS\A8\CC65/lib/atari5200.lib(umod.o):
-    CODE              Offs=0059A6  Size=000011  Align=00001  Fill=0000
+    CODE              Offs=005A28  Size=000011  Align=00001  Fill=0000
 C:\UTILS\A8\CC65/lib/atari5200.lib(zerobss.o):
-    CODE              Offs=0059B7  Size=000023  Align=00001  Fill=0000
+    CODE              Offs=005A39  Size=000023  Align=00001  Fill=0000
 C:\UTILS\A8\CC65/lib/atari5200.lib(zeropage.o):
     ZEROPAGE          Offs=00000A  Size=00001A  Align=00001  Fill=0000
 
@@ -135,15 +135,15 @@ Name                   Start     End    Size  Align
 ----------------------------------------------------
 CARTYEAR              000000  000001  000002  00001
 ZEROPAGE              00001D  000040  000024  00001
-DATA                  001000  0012DA  0002DB  00001
-BSS                   0012DB  001580  0002A6  00001
+DATA                  001000  0012FB  0002FC  00001
+BSS                   0012FC  0015A3  0002A8  00001
 TRAIN_SEG_CHARSET1    001800  001BFF  000400  00001
 ONCE                  004000  00400B  00000C  00001
-CODE                  00400C  0099E5  0059DA  00001
+CODE                  00400C  009A67  005A5C  00001
 TRAIN_SEG_CHARSET2    00A400  00A7FF  000400  00001
-TRAIN_SEG_DL          00A800  00A88D  00008E  00001
-TRAIN_SEG_RMTSONG     00A88E  00B3D9  000B4C  00001
-TRAIN_SEG_RMTPLAYER   00B3DA  00B9E3  00060A  00001
+TRAIN_SEG_DL          00A800  00A88F  000090  00001
+TRAIN_SEG_RMTSONG     00A890  00B3DB  000B4C  00001
+TRAIN_SEG_RMTPLAYER   00B3DC  00B9E5  00060A  00001
 CARTNAME              00BFE8  00BFF7  000010  00001
 DCARTYEAR             00BFFC  00BFFD  000002  00001
 CARTENTRY             00BFFE  00BFFF  000002  00001
@@ -151,191 +151,191 @@ CARTENTRY             00BFFE  00BFFF  000002  00001
 
 Exports list by name:
 ---------------------
-_MENU_TRAIN_TITLE         006D0F RLA    _TRAIN_DATA_CHARSET1      001800 RLA    
-_TRAIN_DATA_CHARSET1_PAGE 006C0D RLA    _TRAIN_DATA_CHARSET2_PAGE 006C0E RLA    
-_TRAIN_DATA_DL_GAME       00A827 RLA    _TRAIN_DATA_DL_INTERMISSION 00A84A RLA    
-_TRAIN_DATA_DL_MENU       00A800 RLA    _TRAIN_DATA_DL_SCENESELECTION 00A867 RLA    
+_MENU_TRAIN_TITLE         006D91 RLA    _TRAIN_DATA_CHARSET1      001800 RLA    
+_TRAIN_DATA_CHARSET1_PAGE 006C8F RLA    _TRAIN_DATA_CHARSET2_PAGE 006C90 RLA    
+_TRAIN_DATA_DL_GAME       00A829 RLA    _TRAIN_DATA_DL_INTERMISSION 00A84C RLA    
+_TRAIN_DATA_DL_MENU       00A800 RLA    _TRAIN_DATA_DL_SCENESELECTION 00A869 RLA    
 _TRAIN_DATA_GAMESCREEN    000400 RLA    _TRAIN_DATA_PMGAREA       000800 RLA    
-_TRAIN_DATA_RMTPLAYER     00B3DA RLA    _TRAIN_DATA_RMTPLAYER_END 00B9E4 RLA    
-_TRAIN_DATA_RMTSONG       00A88E RLA    _TRAIN_DATA_RMTSONG_END   00B3DA RLA    
-_TRAIN_DATA_STATUSBARSCREEN 0007C0 RLA    _TRAIN_FIGURE_DOWN        006CCF RLA    
-_TRAIN_FIGURE_LEFT        006C4F RLA    _TRAIN_FIGURE_RIGHT       006C0F RLA    
-_TRAIN_FIGURE_UP          006C8F RLA    _TRAIN_GAME_ELEMENTS      008A94 RLA    
-_TRAIN_GAME_LEVELS        006E71 RLA    __BSS_RUN__               0012DB RLA    
-__BSS_SIZE__              0002A6 REA    __CARTSIZE__              008000 REA    
+_TRAIN_DATA_RMTPLAYER     00B3DC RLA    _TRAIN_DATA_RMTPLAYER_END 00B9E6 RLA    
+_TRAIN_DATA_RMTSONG       00A890 RLA    _TRAIN_DATA_RMTSONG_END   00B3DC RLA    
+_TRAIN_DATA_STATUSBARSCREEN 0007C0 RLA    _TRAIN_FIGURE_DOWN        006D51 RLA    
+_TRAIN_FIGURE_LEFT        006CD1 RLA    _TRAIN_FIGURE_RIGHT       006C91 RLA    
+_TRAIN_FIGURE_UP          006D11 RLA    _TRAIN_GAME_ELEMENTS      008B16 RLA    
+_TRAIN_GAME_LEVELS        006EF3 RLA    __BSS_RUN__               0012FC RLA    
+__BSS_SIZE__              0002A8 REA    __CARTSIZE__              008000 REA    
 __CART_ENTRY__            000001 REA    __CART_NAME__             000001 REA    
 __CART_YEAR__             000001 REA    __CONSTRUCTOR_COUNT__     000000 REA    
-__CONSTRUCTOR_TABLE__     00400C RLA    __DATA_LOAD__             0099E6 RLA    
-__DATA_RUN__              001000 RLA    __DATA_SIZE__             0002DB REA    
-__DESTRUCTOR_COUNT__      000000 REA    __DESTRUCTOR_TABLE__      0099E6 RLA    
+__CONSTRUCTOR_TABLE__     00400C RLA    __DATA_LOAD__             009A68 RLA    
+__DATA_RUN__              001000 RLA    __DATA_SIZE__             0002FC REA    
+__DESTRUCTOR_COUNT__      000000 REA    __DESTRUCTOR_TABLE__      009A68 RLA    
 __RAM_SIZE__              003000 REA    __RAM_START__             001000 RLA    
 __RESERVED_MEMORY__       000000 REA    __STACKSIZE__             000200 REA    
-__STARTUP__               000001 REA    __TRAIN_SEG_CHARSET1_LOAD__ 009CC1 RLA    
-__TRAIN_SEG_CHARSET1_RUN__ 001800 RLA    ___bzero                  0097D7 RLA    
-_brkIRQHandler            009553 RLA    _decrementScore           009537 RLA    
-_dliHandler               0092F2 RLA    _dliInterMission          0093D8 RLA    
-_dliMenuHandler           00931D RLA    _inGameAudioFlag          0012AD RLA    
-_incrementScore           00951B RLA    _kpdHandler               009555 RLA    
-_kpdLastKey               0012AE RLA    _main                     0063AB RLA    
-_memcmp                   009717 RLA    _memcpy                   00974B RLA    
-_memmove                  009787 RLA    _memset                   0097DF RLA    
-_menuCycleTrainFlag       00151E RLA    _p0x                      0012E0 RLA    
-_rmtSetUniversalVBI       0094FD RLA    _sfxRequested             0012AA RLA    
-_songLineRequested        0012AB RLA    _statusBarBackground      0012B0 RLA    
-_statusBarForeground      0012AF RLA    _zp_ptr1                  00001D RLZ    
+__STARTUP__               000001 REA    __TRAIN_SEG_CHARSET1_LOAD__ 009D64 RLA    
+__TRAIN_SEG_CHARSET1_RUN__ 001800 RLA    ___bzero                  009859 RLA    
+_brkIRQHandler            0095D5 RLA    _decrementScore           0095B9 RLA    
+_dliHandler               009374 RLA    _dliInterMission          00945A RLA    
+_dliMenuHandler           00939F RLA    _inGameAudioFlag          0012CE RLA    
+_incrementScore           00959D RLA    _kpdHandler               0095D7 RLA    
+_kpdLastKey               0012CF RLA    _main                     00641A RLA    
+_memcmp                   009799 RLA    _memcpy                   0097CD RLA    
+_memmove                  009809 RLA    _memset                   009861 RLA    
+_menuCycleTrainFlag       001540 RLA    _p0x                      001301 RLA    
+_rmtSetUniversalVBI       00957F RLA    _sfxRequested             0012CB RLA    
+_songLineRequested        0012CC RLA    _statusBarBackground      0012D1 RLA    
+_statusBarForeground      0012D0 RLA    _zp_ptr1                  00001D RLZ    
 _zp_ptr2                  00001F RLZ    _zp_ptr3                  000021 RLZ    
 _zp_x1                    000023 RLZ    _zp_z1                    000024 RLZ    
-addeq0sp                  00957A RLA    addeqysp                  00957C RLA    
-addysp                    00958C RLA    aslax2                    009599 RLA    
-aslax3                    0095A4 RLA    aslax4                    0095B2 RLA    
-asrax3                    0095C3 RLA    bnega                     0095DB RLA    
-callmain                  0095E5 RLA    copydata                  009608 RLA    
-decax1                    00964F RLA    decax2                    009656 RLA    
-decax3                    00965D RLA    decax4                    009664 RLA    
-decaxy                    00966B RLA    donelib                   0095FC RLA    
-incax1                    0096B7 RLA    incax2                    0096BE RLA    
-incax3                    0096C5 RLA    incax4                    0096CF RLA    
-incax8                    0096CA RLA    incaxy                    0096D1 RLA    
-incsp1                    0096DA RLA    incsp2                    0096E9 RLA    
-incsp3                    0096F7 RLA    incsp4                    0096FC RLA    
-initlib                   004000 RLA    ldax0sp                   00970E RLA    
-ldaxi                     009701 RLA    ldaxysp                   009710 RLA    
-memcpy_getparams          009774 RLA    memcpy_upwards            00974E RLA    
-mulax10                   00987F RLA    mulax3                    009898 RLA    
-mulax5                    0098A9 RLA    negax                     0098C1 RLA    
-popax                     0096E1 RLA    popptr1                   0098CF RLA    
-popsargsudiv16            00992D RLA    ptr1                      00002F RLZ    
+addeq0sp                  0095FC RLA    addeqysp                  0095FE RLA    
+addysp                    00960E RLA    aslax2                    00961B RLA    
+aslax3                    009626 RLA    aslax4                    009634 RLA    
+asrax3                    009645 RLA    bnega                     00965D RLA    
+callmain                  009667 RLA    copydata                  00968A RLA    
+decax1                    0096D1 RLA    decax2                    0096D8 RLA    
+decax3                    0096DF RLA    decax4                    0096E6 RLA    
+decaxy                    0096ED RLA    donelib                   00967E RLA    
+incax1                    009739 RLA    incax2                    009740 RLA    
+incax3                    009747 RLA    incax4                    009751 RLA    
+incax8                    00974C RLA    incaxy                    009753 RLA    
+incsp1                    00975C RLA    incsp2                    00976B RLA    
+incsp3                    009779 RLA    incsp4                    00977E RLA    
+initlib                   004000 RLA    ldax0sp                   009790 RLA    
+ldaxi                     009783 RLA    ldaxysp                   009792 RLA    
+memcpy_getparams          0097F6 RLA    memcpy_upwards            0097D0 RLA    
+mulax10                   009901 RLA    mulax3                    00991A RLA    
+mulax5                    00992B RLA    negax                     009943 RLA    
+popax                     009763 RLA    popptr1                   009951 RLA    
+popsargsudiv16            0099AF RLA    ptr1                      00002F RLZ    
 ptr2                      000031 RLZ    ptr3                      000033 RLZ    
-ptr4                      000035 RLZ    pusha                     0098E1 RLA    
-pusha0                    0098F5 RLA    pushax                    0098F7 RLA    
-pushwysp                  00990F RLA    return0                   009929 RLA    
+ptr4                      000035 RLZ    pusha                     009963 RLA    
+pusha0                    009977 RLA    pushax                    009979 RLA    
+pushwysp                  009991 RLA    return0                   0099AB RLA    
 sp                        000027 RLZ    sreg                      000029 RLZ    
-start                     009635 RLA    staspidx                  00994D RLA    
+start                     0096B7 RLA    staspidx                  0099CF RLA    
 tmp1                      000037 RLZ    tmp2                      000038 RLZ    
-tosaddax                  009560 RLA    tosdiva0                  009674 RLA    
-tosicmp                   00968B RLA    tosmoda0                  009834 RLA    
-tosudiva0                 009963 RLA    tosumoda0                 0099B2 RLA    
-tosumula0                 009845 RLA    udiv16                    009974 RLA    
-zerobss                   0099C3 RLA    
+tosaddax                  0095E2 RLA    tosdiva0                  0096F6 RLA    
+tosicmp                   00970D RLA    tosmoda0                  0098B6 RLA    
+tosudiva0                 0099E5 RLA    tosumoda0                 009A34 RLA    
+tosumula0                 0098C7 RLA    udiv16                    0099F6 RLA    
+zerobss                   009A45 RLA    
 
 
 Exports list by value:
 ----------------------
 __RESERVED_MEMORY__       000000 REA    __CONSTRUCTOR_COUNT__     000000 REA    
-__DESTRUCTOR_COUNT__      000000 REA    __STARTUP__               000001 REA    
-__CART_NAME__             000001 REA    __CART_YEAR__             000001 REA    
-__CART_ENTRY__            000001 REA    _zp_ptr1                  00001D RLZ    
+__DESTRUCTOR_COUNT__      000000 REA    __CART_NAME__             000001 REA    
+__CART_YEAR__             000001 REA    __CART_ENTRY__            000001 REA    
+__STARTUP__               000001 REA    _zp_ptr1                  00001D RLZ    
 _zp_ptr2                  00001F RLZ    _zp_ptr3                  000021 RLZ    
 _zp_x1                    000023 RLZ    _zp_z1                    000024 RLZ    
 sp                        000027 RLZ    sreg                      000029 RLZ    
 ptr1                      00002F RLZ    ptr2                      000031 RLZ    
 ptr3                      000033 RLZ    ptr4                      000035 RLZ    
 tmp1                      000037 RLZ    tmp2                      000038 RLZ    
-__STACKSIZE__             000200 REA    __BSS_SIZE__              0002A6 REA    
-__DATA_SIZE__             0002DB REA    _TRAIN_DATA_GAMESCREEN    000400 RLA    
+__STACKSIZE__             000200 REA    __BSS_SIZE__              0002A8 REA    
+__DATA_SIZE__             0002FC REA    _TRAIN_DATA_GAMESCREEN    000400 RLA    
 _TRAIN_DATA_STATUSBARSCREEN 0007C0 RLA    _TRAIN_DATA_PMGAREA       000800 RLA    
-__RAM_START__             001000 RLA    __DATA_RUN__              001000 RLA    
-_sfxRequested             0012AA RLA    _songLineRequested        0012AB RLA    
-_inGameAudioFlag          0012AD RLA    _kpdLastKey               0012AE RLA    
-_statusBarForeground      0012AF RLA    _statusBarBackground      0012B0 RLA    
-__BSS_RUN__               0012DB RLA    _p0x                      0012E0 RLA    
-_menuCycleTrainFlag       00151E RLA    _TRAIN_DATA_CHARSET1      001800 RLA    
-__TRAIN_SEG_CHARSET1_RUN__ 001800 RLA    __RAM_SIZE__              003000 REA    
+__DATA_RUN__              001000 RLA    __RAM_START__             001000 RLA    
+_sfxRequested             0012CB RLA    _songLineRequested        0012CC RLA    
+_inGameAudioFlag          0012CE RLA    _kpdLastKey               0012CF RLA    
+_statusBarForeground      0012D0 RLA    _statusBarBackground      0012D1 RLA    
+__BSS_RUN__               0012FC RLA    _p0x                      001301 RLA    
+_menuCycleTrainFlag       001540 RLA    __TRAIN_SEG_CHARSET1_RUN__ 001800 RLA    
+_TRAIN_DATA_CHARSET1      001800 RLA    __RAM_SIZE__              003000 REA    
 initlib                   004000 RLA    __CONSTRUCTOR_TABLE__     00400C RLA    
-_main                     0063AB RLA    _TRAIN_DATA_CHARSET1_PAGE 006C0D RLA    
-_TRAIN_DATA_CHARSET2_PAGE 006C0E RLA    _TRAIN_FIGURE_RIGHT       006C0F RLA    
-_TRAIN_FIGURE_LEFT        006C4F RLA    _TRAIN_FIGURE_UP          006C8F RLA    
-_TRAIN_FIGURE_DOWN        006CCF RLA    _MENU_TRAIN_TITLE         006D0F RLA    
-_TRAIN_GAME_LEVELS        006E71 RLA    __CARTSIZE__              008000 REA    
-_TRAIN_GAME_ELEMENTS      008A94 RLA    _dliHandler               0092F2 RLA    
-_dliMenuHandler           00931D RLA    _dliInterMission          0093D8 RLA    
-_rmtSetUniversalVBI       0094FD RLA    _incrementScore           00951B RLA    
-_decrementScore           009537 RLA    _brkIRQHandler            009553 RLA    
-_kpdHandler               009555 RLA    tosaddax                  009560 RLA    
-addeq0sp                  00957A RLA    addeqysp                  00957C RLA    
-addysp                    00958C RLA    aslax2                    009599 RLA    
-aslax3                    0095A4 RLA    aslax4                    0095B2 RLA    
-asrax3                    0095C3 RLA    bnega                     0095DB RLA    
-callmain                  0095E5 RLA    donelib                   0095FC RLA    
-copydata                  009608 RLA    start                     009635 RLA    
-decax1                    00964F RLA    decax2                    009656 RLA    
-decax3                    00965D RLA    decax4                    009664 RLA    
-decaxy                    00966B RLA    tosdiva0                  009674 RLA    
-tosicmp                   00968B RLA    incax1                    0096B7 RLA    
-incax2                    0096BE RLA    incax3                    0096C5 RLA    
-incax8                    0096CA RLA    incax4                    0096CF RLA    
-incaxy                    0096D1 RLA    incsp1                    0096DA RLA    
-popax                     0096E1 RLA    incsp2                    0096E9 RLA    
-incsp3                    0096F7 RLA    incsp4                    0096FC RLA    
-ldaxi                     009701 RLA    ldax0sp                   00970E RLA    
-ldaxysp                   009710 RLA    _memcmp                   009717 RLA    
-_memcpy                   00974B RLA    memcpy_upwards            00974E RLA    
-memcpy_getparams          009774 RLA    _memmove                  009787 RLA    
-___bzero                  0097D7 RLA    _memset                   0097DF RLA    
-tosmoda0                  009834 RLA    tosumula0                 009845 RLA    
-mulax10                   00987F RLA    mulax3                    009898 RLA    
-mulax5                    0098A9 RLA    negax                     0098C1 RLA    
-popptr1                   0098CF RLA    pusha                     0098E1 RLA    
-pusha0                    0098F5 RLA    pushax                    0098F7 RLA    
-pushwysp                  00990F RLA    return0                   009929 RLA    
-popsargsudiv16            00992D RLA    staspidx                  00994D RLA    
-tosudiva0                 009963 RLA    udiv16                    009974 RLA    
-tosumoda0                 0099B2 RLA    zerobss                   0099C3 RLA    
-__DESTRUCTOR_TABLE__      0099E6 RLA    __DATA_LOAD__             0099E6 RLA    
-__TRAIN_SEG_CHARSET1_LOAD__ 009CC1 RLA    _TRAIN_DATA_DL_MENU       00A800 RLA    
-_TRAIN_DATA_DL_GAME       00A827 RLA    _TRAIN_DATA_DL_INTERMISSION 00A84A RLA    
-_TRAIN_DATA_DL_SCENESELECTION 00A867 RLA    _TRAIN_DATA_RMTSONG       00A88E RLA    
-_TRAIN_DATA_RMTSONG_END   00B3DA RLA    _TRAIN_DATA_RMTPLAYER     00B3DA RLA    
-_TRAIN_DATA_RMTPLAYER_END 00B9E4 RLA    
+_main                     00641A RLA    _TRAIN_DATA_CHARSET1_PAGE 006C8F RLA    
+_TRAIN_DATA_CHARSET2_PAGE 006C90 RLA    _TRAIN_FIGURE_RIGHT       006C91 RLA    
+_TRAIN_FIGURE_LEFT        006CD1 RLA    _TRAIN_FIGURE_UP          006D11 RLA    
+_TRAIN_FIGURE_DOWN        006D51 RLA    _MENU_TRAIN_TITLE         006D91 RLA    
+_TRAIN_GAME_LEVELS        006EF3 RLA    __CARTSIZE__              008000 REA    
+_TRAIN_GAME_ELEMENTS      008B16 RLA    _dliHandler               009374 RLA    
+_dliMenuHandler           00939F RLA    _dliInterMission          00945A RLA    
+_rmtSetUniversalVBI       00957F RLA    _incrementScore           00959D RLA    
+_decrementScore           0095B9 RLA    _brkIRQHandler            0095D5 RLA    
+_kpdHandler               0095D7 RLA    tosaddax                  0095E2 RLA    
+addeq0sp                  0095FC RLA    addeqysp                  0095FE RLA    
+addysp                    00960E RLA    aslax2                    00961B RLA    
+aslax3                    009626 RLA    aslax4                    009634 RLA    
+asrax3                    009645 RLA    bnega                     00965D RLA    
+callmain                  009667 RLA    donelib                   00967E RLA    
+copydata                  00968A RLA    start                     0096B7 RLA    
+decax1                    0096D1 RLA    decax2                    0096D8 RLA    
+decax3                    0096DF RLA    decax4                    0096E6 RLA    
+decaxy                    0096ED RLA    tosdiva0                  0096F6 RLA    
+tosicmp                   00970D RLA    incax1                    009739 RLA    
+incax2                    009740 RLA    incax3                    009747 RLA    
+incax8                    00974C RLA    incax4                    009751 RLA    
+incaxy                    009753 RLA    incsp1                    00975C RLA    
+popax                     009763 RLA    incsp2                    00976B RLA    
+incsp3                    009779 RLA    incsp4                    00977E RLA    
+ldaxi                     009783 RLA    ldax0sp                   009790 RLA    
+ldaxysp                   009792 RLA    _memcmp                   009799 RLA    
+_memcpy                   0097CD RLA    memcpy_upwards            0097D0 RLA    
+memcpy_getparams          0097F6 RLA    _memmove                  009809 RLA    
+___bzero                  009859 RLA    _memset                   009861 RLA    
+tosmoda0                  0098B6 RLA    tosumula0                 0098C7 RLA    
+mulax10                   009901 RLA    mulax3                    00991A RLA    
+mulax5                    00992B RLA    negax                     009943 RLA    
+popptr1                   009951 RLA    pusha                     009963 RLA    
+pusha0                    009977 RLA    pushax                    009979 RLA    
+pushwysp                  009991 RLA    return0                   0099AB RLA    
+popsargsudiv16            0099AF RLA    staspidx                  0099CF RLA    
+tosudiva0                 0099E5 RLA    udiv16                    0099F6 RLA    
+tosumoda0                 009A34 RLA    zerobss                   009A45 RLA    
+__DESTRUCTOR_TABLE__      009A68 RLA    __DATA_LOAD__             009A68 RLA    
+__TRAIN_SEG_CHARSET1_LOAD__ 009D64 RLA    _TRAIN_DATA_DL_MENU       00A800 RLA    
+_TRAIN_DATA_DL_GAME       00A829 RLA    _TRAIN_DATA_DL_INTERMISSION 00A84C RLA    
+_TRAIN_DATA_DL_SCENESELECTION 00A869 RLA    _TRAIN_DATA_RMTSONG       00A890 RLA    
+_TRAIN_DATA_RMTSONG_END   00B3DC RLA    _TRAIN_DATA_RMTPLAYER     00B3DC RLA    
+_TRAIN_DATA_RMTPLAYER_END 00B9E6 RLA    
 
 
 Imports list:
 -------------
 _MENU_TRAIN_TITLE (train2_data.o):
-    train2.o                  build\train2.s:71
+    train2.o                  build\train2.s:73
 _TRAIN_DATA_CHARSET1 (train2_data.o):
-    train2.o                  build\train2.s:53
+    train2.o                  build\train2.s:55
 _TRAIN_DATA_CHARSET1_PAGE (train2_data.o):
     train2_routines.o         train_routines.asm:10
-    train2.o                  build\train2.s:54
+    train2.o                  build\train2.s:56
 _TRAIN_DATA_CHARSET2_PAGE (train2_data.o):
     train2_routines.o         train_routines.asm:9
-    train2.o                  build\train2.s:55
-_TRAIN_DATA_DL_GAME (train2_data.o):
     train2.o                  build\train2.s:57
-_TRAIN_DATA_DL_INTERMISSION (train2_data.o):
-    train2.o                  build\train2.s:58
-_TRAIN_DATA_DL_MENU (train2_data.o):
-    train2.o                  build\train2.s:56
-_TRAIN_DATA_DL_SCENESELECTION (train2_data.o):
+_TRAIN_DATA_DL_GAME (train2_data.o):
     train2.o                  build\train2.s:59
-_TRAIN_DATA_GAMESCREEN (train2_data.o):
-    train2.o                  build\train2.s:61
-_TRAIN_DATA_PMGAREA (train2_data.o):
+_TRAIN_DATA_DL_INTERMISSION (train2_data.o):
     train2.o                  build\train2.s:60
-_TRAIN_DATA_RMTPLAYER (train2_data.o):
+_TRAIN_DATA_DL_MENU (train2_data.o):
+    train2.o                  build\train2.s:58
+_TRAIN_DATA_DL_SCENESELECTION (train2_data.o):
+    train2.o                  build\train2.s:61
+_TRAIN_DATA_GAMESCREEN (train2_data.o):
     train2.o                  build\train2.s:63
-_TRAIN_DATA_RMTPLAYER_END (train2_data.o):
-    train2.o                  build\train2.s:64
-_TRAIN_DATA_RMTSONG (train2_data.o):
+_TRAIN_DATA_PMGAREA (train2_data.o):
+    train2.o                  build\train2.s:62
+_TRAIN_DATA_RMTPLAYER (train2_data.o):
     train2.o                  build\train2.s:65
-_TRAIN_DATA_RMTSONG_END (train2_data.o):
+_TRAIN_DATA_RMTPLAYER_END (train2_data.o):
     train2.o                  build\train2.s:66
+_TRAIN_DATA_RMTSONG (train2_data.o):
+    train2.o                  build\train2.s:67
+_TRAIN_DATA_RMTSONG_END (train2_data.o):
+    train2.o                  build\train2.s:68
 _TRAIN_DATA_STATUSBARSCREEN (train2_data.o):
     train2_routines.o         train_routines.asm:11
-    train2.o                  build\train2.s:62
+    train2.o                  build\train2.s:64
 _TRAIN_FIGURE_DOWN (train2_data.o):
-    train2.o                  build\train2.s:70
-_TRAIN_FIGURE_LEFT (train2_data.o):
-    train2.o                  build\train2.s:68
-_TRAIN_FIGURE_RIGHT (train2_data.o):
-    train2.o                  build\train2.s:67
-_TRAIN_FIGURE_UP (train2_data.o):
-    train2.o                  build\train2.s:69
-_TRAIN_GAME_ELEMENTS (train2_data.o):
-    train2.o                  build\train2.s:73
-_TRAIN_GAME_LEVELS (train2_data.o):
     train2.o                  build\train2.s:72
+_TRAIN_FIGURE_LEFT (train2_data.o):
+    train2.o                  build\train2.s:70
+_TRAIN_FIGURE_RIGHT (train2_data.o):
+    train2.o                  build\train2.s:69
+_TRAIN_FIGURE_UP (train2_data.o):
+    train2.o                  build\train2.s:71
+_TRAIN_GAME_ELEMENTS (train2_data.o):
+    train2.o                  build\train2.s:75
+_TRAIN_GAME_LEVELS (train2_data.o):
+    train2.o                  build\train2.s:74
 __BSS_RUN__ ([linker generated]):
     zerobss.o                 common/zerobss.s:8
 __BSS_SIZE__ ([linker generated]):
@@ -375,34 +375,34 @@ __STACKSIZE__ ([linker generated]):
 __STARTUP__ (crt0.o):
     train2.o                  build\train2.s:13
 __TRAIN_SEG_CHARSET1_LOAD__ ([linker generated]):
-    train2.o                  build\train2.s:75
+    train2.o                  build\train2.s:77
 __TRAIN_SEG_CHARSET1_RUN__ ([linker generated]):
     train2_data.o             train_data.asm:38
-    train2.o                  build\train2.s:76
+    train2.o                  build\train2.s:78
 ___bzero (memset.o):
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
 _brkIRQHandler (train2_routines.o):
-    train2.o                  build\train2.s:132
+    train2.o                  build\train2.s:135
 _decrementScore (train2_routines.o):
-    train2.o                  build\train2.s:96
+    train2.o                  build\train2.s:99
 _dliHandler (train2_routines.o):
-    train2.o                  build\train2.s:127
+    train2.o                  build\train2.s:130
 _dliInterMission (train2_routines.o):
-    train2.o                  build\train2.s:129
+    train2.o                  build\train2.s:132
 _dliMenuHandler (train2_routines.o):
-    train2.o                  build\train2.s:128
+    train2.o                  build\train2.s:131
 _inGameAudioFlag (train2_routines.o):
-    train2.o                  build\train2.s:211
+    train2.o                  build\train2.s:216
 _incrementScore (train2_routines.o):
-    train2.o                  build\train2.s:95
+    train2.o                  build\train2.s:98
 _kpdHandler (train2_routines.o):
-    train2.o                  build\train2.s:133
+    train2.o                  build\train2.s:136
 _kpdLastKey (train2_routines.o):
-    train2.o                  build\train2.s:134
+    train2.o                  build\train2.s:137
 _main (train2.o):
     callmain.o                runtime/callmain.s:11
 _memcmp (memcmp.o):
@@ -418,145 +418,146 @@ _menuCycleTrainFlag (train2.o):
 _p0x (train2.o):
     train2_routines.o         train_routines.asm:12
 _rmtSetUniversalVBI (train2_routines.o):
-    train2.o                  build\train2.s:114
+    train2.o                  build\train2.s:117
 _sfxRequested (train2_routines.o):
-    train2.o                  build\train2.s:210
+    train2.o                  build\train2.s:215
 _songLineRequested (train2_routines.o):
-    train2.o                  build\train2.s:209
+    train2.o                  build\train2.s:214
 _statusBarBackground (train2_routines.o):
-    train2.o                  build\train2.s:131
+    train2.o                  build\train2.s:134
 _statusBarForeground (train2_routines.o):
-    train2.o                  build\train2.s:130
+    train2.o                  build\train2.s:133
 _zp_ptr1 (train2_routines.o):
-    train2.o                  build\train2.s:160
-_zp_ptr2 (train2_routines.o):
-    train2.o                  build\train2.s:161
-_zp_ptr3 (train2_routines.o):
-    train2.o                  build\train2.s:162
-_zp_x1 (train2_routines.o):
-    train2.o                  build\train2.s:164
-_zp_z1 (train2_routines.o):
     train2.o                  build\train2.s:163
+_zp_ptr2 (train2_routines.o):
+    train2.o                  build\train2.s:164
+_zp_ptr3 (train2_routines.o):
+    train2.o                  build\train2.s:165
+_zp_x1 (train2_routines.o):
+    train2.o                  build\train2.s:167
+_zp_z1 (train2_routines.o):
+    train2.o                  build\train2.s:166
 addeq0sp (addeqsp.o):
-    train2.o                  build\train2.s:6754
+    train2.o                  build\train2.s:6865
 addeqysp (addeqsp.o):
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
 addysp (addysp.o):
     incsp4.o                  runtime/incsp4.s:8
     incsp3.o                  runtime/incsp3.s:8
-    train2.o                  build\train2.s:6754
+    train2.o                  build\train2.s:6865
 aslax2 (aslax2.o):
-    train2.o                  build\train2.s:6754
+    train2.o                  build\train2.s:6865
 aslax3 (aslax3.o):
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
 aslax4 (aslax4.o):
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
 asrax3 (asrax3.o):
-    train2.o                  build\train2.s:6754
+    train2.o                  build\train2.s:6865
 bnega (bneg.o):
-    train2.o                  build\train2.s:6754
+    train2.o                  build\train2.s:6865
 callmain (callmain.o):
     crt0.o                    atari5200/crt0.s:12
 copydata (copydata.o):
     crt0.o                    atari5200/crt0.s:13
 decax1 (decax1.o):
-    train2.o                  build\train2.s:6754
+    train2.o                  build\train2.s:6865
 decax2 (decax2.o):
-    train2.o                  build\train2.s:6754
+    train2.o                  build\train2.s:6865
 decax3 (decax3.o):
-    train2.o                  build\train2.s:6754
+    train2.o                  build\train2.s:6865
 decax4 (decax4.o):
-    train2.o                  build\train2.s:6754
+    train2.o                  build\train2.s:6865
 decaxy (decaxy.o):
-    train2.o                  build\train2.s:6754
+    train2.o                  build\train2.s:6865
 donelib (condes.o):
     crt0.o                    atari5200/crt0.s:12
 incax1 (incax1.o):
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
 incax2 (incax2.o):
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
 incax3 (incax3.o):
-    train2.o                  build\train2.s:6754
+    train2.o                  build\train2.s:6865
 incax4 (incaxy.o):
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
 incax8 (incax8.o):
-    train2.o                  build\train2.s:6754
+    train2.o                  build\train2.s:6865
 incaxy (incaxy.o):
     incax8.o                  runtime/incax8.s:8
     incax3.o                  runtime/incax3.s:8
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
 incsp1 (incsp1.o):
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
 incsp2 (incsp2.o):
     staspidx.o                runtime/staspidx.s:8
     popptr1.o                 runtime/popptr1.s:8
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
 incsp3 (incsp3.o):
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
 incsp4 (incsp4.o):
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
 initlib (condes.o):
     crt0.o                    atari5200/crt0.s:12
 ldax0sp (ldaxsp.o):
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
 ldaxi (ldaxi.o):
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
 ldaxysp (ldaxsp.o):
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
 memcpy_getparams (memcpy.o):
     memmove.o                 common/memmove.s:12
 memcpy_upwards (memcpy.o):
     memmove.o                 common/memmove.s:12
 mulax10 (mulax10.o):
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
 mulax3 (mulax3.o):
-    train2.o                  build\train2.s:6754
+    train2.o                  build\train2.s:6865
 mulax5 (mulax5.o):
-    train2.o                  build\train2.s:6754
+    train2.o                  build\train2.s:6865
 negax (negabs.o):
     shelp.o                   runtime/shelp.s:11
     mod.o                     runtime/mod.s:11
@@ -611,69 +612,69 @@ ptr4 (zeropage.o):
     shelp.o                   runtime/shelp.s:12
     mul8.o                    runtime/mul8.s:10
 pusha (pusha.o):
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
 pusha0 (pushax.o):
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
 pushax (pushax.o):
     callmain.o                runtime/callmain.s:11
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
 pushwysp (pushwsp.o):
-    train2.o                  build\train2.s:6754
+    train2.o                  build\train2.s:6865
 return0 (return0.o):
     memcmp.o                  common/memcmp.s:8
 sp (zeropage.o):
@@ -702,7 +703,7 @@ sreg (zeropage.o):
 start (crt0.o):
     cartentry.o               atari5200/cartentry.s:6
 staspidx (staspidx.o):
-    train2.o                  build\train2.s:6754
+    train2.o                  build\train2.s:6865
 tmp1 (zeropage.o):
     copydata.o                common/copydata.s:9
     staspidx.o                runtime/staspidx.s:9
@@ -720,22 +721,22 @@ tmp2 (zeropage.o):
     shelp.o                   runtime/shelp.s:12
     div.o                     runtime/div.s:12
 tosaddax (add.o):
-    train2.o                  build\train2.s:6754
+    train2.o                  build\train2.s:6865
 tosdiva0 (div.o):
-    train2.o                  build\train2.s:6754
+    train2.o                  build\train2.s:6865
 tosicmp (icmp.o):
-    train2.o                  build\train2.s:6754
+    train2.o                  build\train2.s:6865
 tosmoda0 (mod.o):
-    train2.o                  build\train2.s:6754
+    train2.o                  build\train2.s:6865
 tosudiva0 (udiv.o):
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
 tosumoda0 (umod.o):
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
 tosumula0 (mul8.o):
-    train2.o                  build\train2.s:6754
-    train2.o                  build\train2.s:6754
+    train2.o                  build\train2.s:6865
+    train2.o                  build\train2.s:6865
 udiv16 (udiv.o):
     umod.o                    runtime/umod.s:8
     shelp.o                   runtime/shelp.s:11

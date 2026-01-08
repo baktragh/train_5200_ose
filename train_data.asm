@@ -71,27 +71,29 @@ _TRAIN_DATA_DL_MENU:
 .byte 4+64                    ; Separator line with LMS                       1      
 .word _TRAIN_DATA_GAMESCREEN  ; Screen memory
 .byte 32+128                  ; Three blank lines + DLI for main title          
-.byte 4,4,4,4,4,0+128,4,4,4,4   ; 8 lines for main title, DLI for more colors 9 
-.byte 32+128                  ; Three blank lines + DLI for subtitle colors
+.byte 4,4,4,4,4,0+128,4,4,4,4 ; 8 lines for main title, DLI for more colors 9 
+.byte 16+128                  ; 2 blank line + DLI for subtitle colors
 .byte 2                       ; 1 line for subtitle                           1
-.byte 32+128                  ; Three blank lines + DLI for separator colors
+.byte 16+128                  ; 2 blank line + DLI for separator colors
 .byte 4                       ; Separator line                                1
-.byte 80+128                 ; More blank lines + DLI for menu option colors
+.byte 16+128                  ; 2 blank lines + DLI for menu option colors
 .byte 2                       ; Menu line - Start game                        1 
-.byte 16                      ; 2 blank lines
+.byte 0                       ; 1 blank line
 .byte 2                       ; Menu line - Game Speed: xxxx                  1 
-.byte 16                      ; 2 blank lines
+.byte 0                       ; 1 blank line
 .byte 2                       ; Menu line - In-Game Audio:                    1
-.byte 16                      ; 2 blank lines
-.byte 2                       ; Menu line - Dead zone                         1      
-.byte 48+128                  ; More blank lines between menu items and bar
+.byte 0                       ; 1 blank line
+.byte 2                       ; Menu line - Dead zone                         1
+.byte 0                       ; 1 blank line
+.byte 2                       ; Menu line - U-Turn                            1      
+.byte 32+128                  ; 2 blank lines between menu items and bar
 .byte 4                       ; The track                                     1
 .byte 48
 .byte 32+128                  ; Three blank lines + DLI for status bar
 .byte 2+64                    ; One line for status bar (scores)              1
 .word _TRAIN_DATA_STATUSBARSCREEN
 .byte 65                      ; JVB
-.word _TRAIN_DATA_DL_MENU     ; DL jump                                      18
+.word _TRAIN_DATA_DL_MENU     ; DL jump                                      19
 _TRAIN_DATA_DL_MENU_END:
 
 _TRAIN_DATA_DL_GAME:

@@ -6,6 +6,8 @@ menu_item_spd_2;Game Speed: SLOWER
 menu_item_dz_0;JS Dead Zone: SMALL
 menu_item_dz_1;JS Dead Zone: MEDIUM
 menu_item_dz_2;JS Dead Zone: LARGE
+menu_item_ut_0;Allow U-Turn: YES
+menu_item_ut_1;Allow U-Turn: NO
 !!CENTER 20
 scene_sel;SCENE  SELECTION
 !!CENTER OFF

@@ -111,7 +111,8 @@ extern unsigned int _TRAIN_SEG_CHARSET1_RUN__;
 #define JS_START (64)
 #define JS_FLAG_START (1)
 #define JS_FLAG_RESET (2)
-
+#define JS_UTURN_ENABLED (1)
+#define JS_UTURN_DISABLED (0)
 
 /*Game speed*/
 #define GAME_SPEED_NORMAL (0)
@@ -194,6 +195,7 @@ void hideLoco();
 /*Game toggles*/
 void setGameSpeed(unsigned char speed);
 void setJoystickZones(unsigned char zoneSize);
+void setJoystickUTurn(unsigned char uTurn);
 void toggleGameInit(unsigned char gameInitType);
 
 
@@ -418,6 +420,7 @@ unsigned char jsZoneRight;
 unsigned char jsZoneUp;
 unsigned char jsZoneDown;
 unsigned char jsZoneSizes[3] = {25,45,65};
+unsigned char jsUTurn;
 
 unsigned char NTSCSpeeds[2] = {20, 24};
 
@@ -462,7 +465,8 @@ unsigned char* highScorePtr;
 #define MENU_ITEM_START_GAME (0)
 #define MENU_ITEM_SPEED (1)
 #define MENU_ITEM_DEAD_ZONE (2)
-#define MENU_ITEM_MAX (2)
+#define MENU_ITEM_UTURN (3)
+#define MENU_ITEM_MAX (3)
 
 #define GAME_AUDIO_SFX (0)
 
@@ -470,11 +474,15 @@ unsigned char* highScorePtr;
 #define MENU_DZ_MEDIUM (1)
 #define MENU_DZ_LARGE (2)
 
+#define MENU_UT_YES (0)
+#define MENU_UT_NO (1)
+
 unsigned char menuCurrentItem;
 unsigned char menuGameSpeed;
 unsigned char menuDeadZone;
 unsigned char menuCycleTrainFlag;
 unsigned char menuScrollTextFlag;
+unsigned char menuUTurn;
 
 /*Sounds and music*/
 extern unsigned char songLineRequested;
@@ -537,6 +545,7 @@ int main() {
     setGameSpeed(GAME_SPEED_NORMAL);
     menuGameSpeed = GAME_SPEED_NORMAL;
     menuDeadZone = MENU_DZ_MEDIUM;
+    menuUTurn = MENU_UT_YES;
 
     toggleGameInit(gameInitType);
 
@@ -581,6 +590,7 @@ menu:
     /*Set game speed to the speed selected in menu*/
     setGameSpeed(menuGameSpeed);
     setJoystickZones(menuDeadZone);
+    setJoystickUTurn(menuUTurn);
 
     /*Select scene*/
     if (gameMaxLevelIndex > 0) {
@@ -674,7 +684,7 @@ gameLoop:
         OS.atract=0;
 
         /*Avoid 180 degrees turn when at least one carriage*/
-        if (levelTrainLength>0 && ((lastJS == JS_LEFT && locoJoystickDirection==JS_RIGHT) ||
+        if (jsUTurn==JS_UTURN_DISABLED && levelTrainLength>0 && ((lastJS == JS_LEFT && locoJoystickDirection==JS_RIGHT) ||
            (lastJS == JS_RIGHT && locoJoystickDirection==JS_LEFT) || 
            (lastJS == JS_UP && locoJoystickDirection==JS_DOWN) || 
            (lastJS == JS_DOWN && locoJoystickDirection==JS_UP))) {
@@ -1336,9 +1346,13 @@ void handleMenu() {
             
             /*If not, then wait until trigger released*/
             while (jsGetFire() == 0);
+
+            /*Change speed*/
             if (menuCurrentItem == MENU_ITEM_SPEED) {
                 menuGameSpeed = !menuGameSpeed;
             }
+
+            /*Change dead zone*/
             else if (menuCurrentItem == MENU_ITEM_DEAD_ZONE) {
                 if (menuDeadZone==MENU_DZ_LARGE) {
                     menuDeadZone=MENU_DZ_SMALL;
@@ -1346,6 +1360,10 @@ void handleMenu() {
                 else {
                     ++menuDeadZone;
                 }
+            }
+            /*Change u-turn enablement*/
+            else if (menuCurrentItem == MENU_ITEM_UTURN) {
+                menuUTurn= !menuUTurn;
             }
             paintMenuItems();
             delay(10);
@@ -1418,7 +1436,7 @@ void paintTrainTitle() {
     memset(&TRAIN_DATA_GAMESCREEN + (11 * 40), CHAR_SEPARATOR, 40);
 
     /*Track*/
-    memset(&TRAIN_DATA_GAMESCREEN + (16 * 40), CHAR_TRACK, 40);
+    memset(&TRAIN_DATA_GAMESCREEN + (17 * 40), CHAR_TRACK, 40);
 
 }
 
@@ -1431,7 +1449,7 @@ void paintMenuItems() {
     verticalSync(1);
 
     /*Clear everything*/
-    memset(&TRAIN_DATA_GAMESCREEN + (12 * 40), 0, 120);
+    memset(&TRAIN_DATA_GAMESCREEN + (12 * 40), 0, 160);
 
     /*Paint "START GAME"*/
     memcpy(&TRAIN_DATA_GAMESCREEN + (12 * 40) + T_MENU_ITEM_1_C, T_MENU_ITEM_1, T_MENU_ITEM_1_L);
@@ -1459,6 +1477,18 @@ void paintMenuItems() {
         }
     }
 
+    /*Paint U-Turn setting*/
+    switch(menuUTurn) {
+        case MENU_UT_YES: {
+            memcpy(&TRAIN_DATA_GAMESCREEN + (15*40)+T_MENU_ITEM_UT_0_C,T_MENU_ITEM_UT_0,T_MENU_ITEM_UT_0_L);
+            break;
+        }
+        case MENU_UT_NO: {
+            memcpy(&TRAIN_DATA_GAMESCREEN + (15*40)+T_MENU_ITEM_UT_0_C,T_MENU_ITEM_UT_1,T_MENU_ITEM_UT_1_L);
+            break;
+        }
+    }
+
     /*Inverse the current menu item*/
     switch (menuCurrentItem) {
         case(MENU_ITEM_START_GAME):
@@ -1476,6 +1506,11 @@ void paintMenuItems() {
         case (MENU_ITEM_DEAD_ZONE): {
             ptr = &TRAIN_DATA_GAMESCREEN + (14 * 40) + T_MENU_ITEM_DZ_1_C - 1;
             l = T_MENU_ITEM_DZ_1_L +2 ;
+            break;
+        }
+        case (MENU_ITEM_UTURN): {
+            ptr = &TRAIN_DATA_GAMESCREEN + (15 * 40) + T_MENU_ITEM_UT_0_C - 1;
+            l = T_MENU_ITEM_UT_0_L +2 ;
             break;
         }
     }
@@ -2271,6 +2306,10 @@ void setJoystickZones(unsigned char zoneSize) {
     jsZoneUp = 114-z;
     jsZoneLeft = 114-z;
     jsZoneRight = 114+z;
+}
+
+void setJoystickUTurn(unsigned char uTurn) {
+    jsUTurn = (uTurn==MENU_UT_YES ? JS_UTURN_ENABLED:JS_UTURN_DISABLED);
 }
 
 void toggleGameInit(unsigned char gameInitType) {

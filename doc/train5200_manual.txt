@@ -1,5 +1,6 @@
 TRAIN 1, 2, 3 OSE games for the
-Atari 5200 console © 2020 BAHA
+Atari 5200 console
+© 2020 - 2026 BAHA
 Software Petr Postava & Michael
 Kalouš
 
@@ -53,8 +54,10 @@ RESET        Return to menu
 Menu and Scene Selection
 
 In the main menu, you can start game,
-change game speed, and select the
-size of the joystick’s dead zone.
+change game speed, select the
+size of the joystick’s dead zone,
+and determine if the loco can
+perform a U-Turn.
 You can begin the game from any
 screen you have already reached.
 Position the cursor on the desired
