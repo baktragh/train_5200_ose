@@ -637,7 +637,7 @@ level:
     /*Reset train status*/
     levelTrainLength = 0;
     memset(trainCarArray, 0, sizeof (trainCarArray));
-    memset(trainCarArray, 0, sizeof (trainDirectionArray));
+    memset(trainDirectionArray, 0, sizeof (trainDirectionArray));
 
     /*Wait for joystick movement*/
     locoOldJoystickDirection = JS_C;
@@ -862,7 +862,7 @@ gameLoop:
 
     goto gameLoop;
 
-    return 0;
+    
 }
 
 /*Move all train cars in proper direction*/
